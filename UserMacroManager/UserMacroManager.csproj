@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -78,7 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MacroManager\MacroManager.csproj">
-      <Project>{f444b33d-af10-4a5c-a000-1fea7766159c}</Project>
+      <Project>{c0dd3ea6-3b3f-42fc-bea5-b5823389c1e4}</Project>
       <Name>MacroManager</Name>
     </ProjectReference>
   </ItemGroup>
