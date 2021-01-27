@@ -26,6 +26,11 @@ namespace Ambiesoft
 			get { return txtInput.Text; }
             set { txtInput.Text = value; }
         }
+		public string ResultString
+        {
+			get { return txtResult.Text; }
+            set { txtResult.Text = value; }
+        }
 		public void UpdateList()
         {
 			lvMacros.Items.Clear();

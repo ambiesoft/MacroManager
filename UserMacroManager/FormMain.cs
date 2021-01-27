@@ -14,13 +14,11 @@ namespace UserMacroManager
 {
     public partial class FormMain : Form
     {
+        readonly MacroManager _mm;
         public FormMain()
         {
             InitializeComponent();
-        }
 
-        private void btnDetail_Click(object sender, EventArgs e)
-        {
             var macros = new Dictionary<string, string>();
             macros.Add("directory", Path.GetDirectoryName(Application.ExecutablePath));
             macros.Add("fullpath", Application.ExecutablePath);
@@ -28,11 +26,25 @@ namespace UserMacroManager
             macros.Add("filenamewithoutext", Path.GetFileNameWithoutExtension(Application.ExecutablePath));
             macros.Add("ext", Path.GetExtension(Application.ExecutablePath));
 
-            var mm = new MacroManager(macros);
-            mm.InputString = txtInput.Text;
-            if (DialogResult.OK != mm.ShowDialog())
+            _mm = new MacroManager(macros);
+            _mm.InputString = txtInput.Text;
+            txtResult.Text = _mm.ResultString;
+        }
+
+        private void btnDetail_Click(object sender, EventArgs e)
+        {
+
+            _mm.InputString = txtInput.Text;
+            if (DialogResult.OK != _mm.ShowDialog())
                 return;
-            txtInput.Text = mm.InputString;
+            txtInput.Text = _mm.InputString;
+            txtResult.Text = _mm.ResultString;
+        }
+
+        private void txtInput_TextChanged(object sender, EventArgs e)
+        {
+            _mm.InputString = txtInput.Text;
+            txtResult.Text = _mm.ResultString;
         }
     }
 }

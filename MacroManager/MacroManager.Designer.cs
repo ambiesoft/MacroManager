@@ -56,7 +56,7 @@ namespace Ambiesoft
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtInput.Location = new System.Drawing.Point(15, 25);
             this.txtInput.Name = "txtInput";
-            this.txtInput.Size = new System.Drawing.Size(622, 20);
+            this.txtInput.Size = new System.Drawing.Size(600, 20);
             this.txtInput.TabIndex = 200;
             this.txtInput.TextChanged += new System.EventHandler(this.txtInput_TextChanged);
             this.txtInput.Validating += new System.ComponentModel.CancelEventHandler(this.txtInput_Validating);
@@ -78,7 +78,7 @@ namespace Ambiesoft
             this.txtResult.Location = new System.Drawing.Point(12, 64);
             this.txtResult.Name = "txtResult";
             this.txtResult.ReadOnly = true;
-            this.txtResult.Size = new System.Drawing.Size(622, 20);
+            this.txtResult.Size = new System.Drawing.Size(600, 20);
             this.txtResult.TabIndex = 400;
             // 
             // lblMacros
@@ -92,7 +92,8 @@ namespace Ambiesoft
             // 
             // lvMacros
             // 
-            this.lvMacros.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lvMacros.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lvMacros.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.chName,
@@ -101,7 +102,7 @@ namespace Ambiesoft
             this.lvMacros.Location = new System.Drawing.Point(12, 113);
             this.lvMacros.MultiSelect = false;
             this.lvMacros.Name = "lvMacros";
-            this.lvMacros.Size = new System.Drawing.Size(622, 170);
+            this.lvMacros.Size = new System.Drawing.Size(600, 225);
             this.lvMacros.TabIndex = 600;
             this.lvMacros.UseCompatibleStateImageBehavior = false;
             this.lvMacros.View = System.Windows.Forms.View.Details;
@@ -121,7 +122,7 @@ namespace Ambiesoft
             // 
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(388, 316);
+            this.btnOK.Location = new System.Drawing.Point(366, 358);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(120, 23);
             this.btnOK.TabIndex = 700;
@@ -132,7 +133,7 @@ namespace Ambiesoft
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(514, 316);
+            this.btnCancel.Location = new System.Drawing.Point(492, 358);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(120, 23);
             this.btnCancel.TabIndex = 800;
@@ -145,8 +146,7 @@ namespace Ambiesoft
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(649, 351);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(627, 393);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.lvMacros);
@@ -155,7 +155,9 @@ namespace Ambiesoft
             this.Controls.Add(this.txtResult);
             this.Controls.Add(this.txtInput);
             this.Controls.Add(this.lblInput);
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(567, 310);
             this.Name = "MacroManager";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

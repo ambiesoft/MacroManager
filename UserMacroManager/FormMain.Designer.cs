@@ -40,6 +40,7 @@ namespace UserMacroManager
             this.txtInput.Name = "txtInput";
             this.txtInput.Size = new System.Drawing.Size(663, 20);
             this.txtInput.TabIndex = 0;
+            this.txtInput.TextChanged += new System.EventHandler(this.txtInput_TextChanged);
             // 
             // btnDetail
             // 
@@ -53,9 +54,9 @@ namespace UserMacroManager
             // 
             // txtResult
             // 
-            this.txtResult.Enabled = false;
             this.txtResult.Location = new System.Drawing.Point(41, 175);
             this.txtResult.Name = "txtResult";
+            this.txtResult.ReadOnly = true;
             this.txtResult.Size = new System.Drawing.Size(663, 20);
             this.txtResult.TabIndex = 0;
             // 
