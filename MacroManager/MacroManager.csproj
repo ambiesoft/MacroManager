@@ -51,6 +51,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="MacroManager.ja-JP.resx">
+      <DependentUpon>MacroManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MacroManager.resx">
       <DependentUpon>MacroManager.cs</DependentUpon>
     </EmbeddedResource>

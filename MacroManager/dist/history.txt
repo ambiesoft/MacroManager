@@ -1,2 +1,5 @@
+2021/03/15 v1.0.2
+HighDPI
+
 2021/01/27 v1.0.1
 Instant update
