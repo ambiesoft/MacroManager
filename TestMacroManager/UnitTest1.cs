@@ -16,8 +16,8 @@ namespace TestMacroManager
             macros.Add("fps", 60.ToString());
             MacroManager macroManager = new MacroManager(macros);
 
-            string input = "aaa ${video} fps=${fps}";
-            string ret = macroManager.Deploy(input);
+            macroManager.InputString = "aaa ${video} fps=${fps}";
+            string ret = macroManager.ResultString;
             Assert.AreEqual(ret, "aaa movie.mp4 fps=60");
         }
     }
