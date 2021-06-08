@@ -15,22 +15,39 @@ namespace Ambiesoft
         public MacroManager(Dictionary<string, string> macros)
         {
             macros_ = macros;
-			
             InitializeComponent();
-
 			UpdateList();
         }
+		public MacroManager() : this(new Dictionary<string, string>())
+		{ }
 
 		public string InputString
         {
 			get { return txtInput.Text; }
-            set { txtInput.Text = value; }
+            set {
+				txtInput.Text = value;
+				Deploy();
+			}
         }
 		public string ResultString
         {
 			get { return txtResult.Text; }
             set { txtResult.Text = value; }
         }
+
+		void Deploy()
+		{
+			try
+			{
+				string ret = Deploy(txtInput.Text);
+				txtResult.Text = ret;
+			}
+			catch (Exception ex)
+			{
+				txtResult.Text = ex.Message;
+			}
+		}
+
 		public void UpdateList()
         {
 			lvMacros.Items.Clear();
@@ -56,7 +73,7 @@ namespace Ambiesoft
 			return s[i + 1];
 		}
 
-		public string Deploy(string input)
+		private string Deploy(string input)
 		{
 			string ret = string.Empty;
 			for (int i = 0; i < input.Length; ++i)
@@ -119,18 +136,7 @@ namespace Ambiesoft
 
         }
 
-        private void txtInput_TextChanged(object sender, EventArgs e)
-        {
-			try
-            {
-				string ret = Deploy(txtInput.Text);
-				txtResult.Text = ret;
-            }
-			catch(Exception ex)
-            {
-				txtResult.Text = ex.Message;
-            }
-        }
+    
 
         private void lvMacros_MouseDoubleClick(object sender, MouseEventArgs e)
         {
@@ -139,6 +145,24 @@ namespace Ambiesoft
 			string textToInsert = lvMacros.SelectedItems[0].Text;
 			// txtInput.Text.Insert(txtInput.SelectionStart, textToInsert);
 			txtInput.Paste("${" + textToInsert + "}");
+        }
+
+		public string SetMacro(string macro, string value)
+        {
+			string ret = macros_.ContainsKey(macro) ? macros_[macro] : null;
+			macros_[macro] = value;
+			UpdateList();
+			return ret;
+        }
+		public void ClearMacros()
+        {
+			macros_.Clear();
+			UpdateList();
+        }
+
+        private void txtInput_TextChanged(object sender, EventArgs e)
+        {
+			Deploy();
         }
     }
 }
