@@ -123,6 +123,7 @@ namespace Ambiesoft
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MacroManager";
+            this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.ResumeLayout(false);
             this.PerformLayout();

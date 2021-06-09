@@ -144,11 +144,12 @@ namespace Ambiesoft
 				return;
 			string textToInsert = lvMacros.SelectedItems[0].Text;
 			// txtInput.Text.Insert(txtInput.SelectionStart, textToInsert);
-			int pos = txtInput.SelectionStart + txtInput.SelectionLength;
+			int prevStart = txtInput.SelectionStart;
+			int prevLength =  txtInput.SelectionLength;
 			string toPaste = "${" + textToInsert + "}";
 			txtInput.Paste(toPaste);
 
-			int newPos = pos + toPaste.Length;
+			int newPos = prevStart + toPaste.Length;
 			txtInput.Select(newPos, 0);
 			
 			txtInput.Focus();

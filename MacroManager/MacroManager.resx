@@ -252,6 +252,18 @@
   <data name="lvMacros.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="chName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="chName.Width" type="System.Int32, mscorlib">
+    <value>148</value>
+  </data>
+  <data name="chValue.Text" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="chValue.Width" type="System.Int32, mscorlib">
+    <value>433</value>
+  </data>
   <data name="lvMacros.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 108</value>
   </data>
@@ -272,18 +284,6 @@
   </data>
   <data name="&gt;&gt;lvMacros.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="chName.Text" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="chName.Width" type="System.Int32, mscorlib">
-    <value>148</value>
-  </data>
-  <data name="chValue.Text" xml:space="preserve">
-    <value>Value</value>
-  </data>
-  <data name="chValue.Width" type="System.Int32, mscorlib">
-    <value>433</value>
   </data>
   <data name="btnOK.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
