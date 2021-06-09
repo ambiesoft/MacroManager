@@ -172,5 +172,10 @@ namespace Ambiesoft
         {
 			Deploy();
         }
+
+        private void MacroManager_Load(object sender, EventArgs e)
+        {
+			txtInput.Select(txtInput.Text.Length, 0);
+        }
     }
 }
