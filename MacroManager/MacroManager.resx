@@ -252,23 +252,11 @@
   <data name="lvMacros.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="chName.Text" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="chName.Width" type="System.Int32, mscorlib">
-    <value>148</value>
-  </data>
-  <data name="chValue.Text" xml:space="preserve">
-    <value>Value</value>
-  </data>
-  <data name="chValue.Width" type="System.Int32, mscorlib">
-    <value>433</value>
-  </data>
   <data name="lvMacros.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 108</value>
   </data>
   <data name="lvMacros.Size" type="System.Drawing.Size, System.Drawing">
-    <value>597, 235</value>
+    <value>597, 247</value>
   </data>
   <data name="lvMacros.TabIndex" type="System.Int32, mscorlib">
     <value>600</value>
@@ -285,14 +273,26 @@
   <data name="&gt;&gt;lvMacros.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="chName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="chName.Width" type="System.Int32, mscorlib">
+    <value>148</value>
+  </data>
+  <data name="chValue.Text" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="chValue.Width" type="System.Int32, mscorlib">
+    <value>433</value>
+  </data>
   <data name="btnOK.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
   <data name="btnOK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>363, 357</value>
+    <value>366, 365</value>
   </data>
   <data name="btnOK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 21</value>
+    <value>120, 25</value>
   </data>
   <data name="btnOK.TabIndex" type="System.Int32, mscorlib">
     <value>700</value>
@@ -316,10 +316,10 @@
     <value>Bottom, Right</value>
   </data>
   <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>489, 357</value>
+    <value>492, 365</value>
   </data>
   <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 21</value>
+    <value>120, 25</value>
   </data>
   <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
     <value>800</value>
@@ -346,7 +346,7 @@
     <value>96, 96</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>624, 390</value>
+    <value>624, 402</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Meiryo UI, 9pt</value>
