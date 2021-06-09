@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zzzDist", "zzzDist\zzzDist.csproj", "{6B694624-DDA4-4149-A93A-99217450E789}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserMacroManager", "UserMacroManager\UserMacroManager.csproj", "{3691096A-821D-4F1C-9BEC-DAAE81CCE641}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacroManager", "MacroManager\MacroManager.csproj", "{C0DD3EA6-3B3F-42FC-BEA5-B5823389C1E4}"
@@ -27,6 +29,10 @@ Global
 		{2542C3C4-2EA4-4525-9DF3-387AA9959D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2542C3C4-2EA4-4525-9DF3-387AA9959D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2542C3C4-2EA4-4525-9DF3-387AA9959D1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B694624-DDA4-4149-A93A-99217450E789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B694624-DDA4-4149-A93A-99217450E789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B694624-DDA4-4149-A93A-99217450E789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B694624-DDA4-4149-A93A-99217450E789}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

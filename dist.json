@@ -1,0 +1,28 @@
+{
+    "name": "MacroManager",
+    "solution": "MacroManager.sln",
+    "targetproject": "zzzDist",
+    "configuration": "Release",
+    "targets": [
+        {
+            "setoutdirforbuild": false,
+            "outdir": "MacroManager\\bin\\Release\\MacroManager\\",
+            "platform": "Any CPU"
+        }
+    ],
+    "ShouldBeFiles": [
+        "Ambiesoft.MacroManager.dll",
+        "Ambiesoft.MacroManager.history.txt",
+        "Ambiesoft.MacroManager.pdb",
+        "Ambiesoft.MacroManager.README.md",
+        "ja-JP\\Ambiesoft.MacroManager.resources.dll"
+    ],
+    "TotalFileCount": 5,
+    "archivedir": "C:\\Linkout\\",
+    "remotedir": "http://ambiesoft.mooo.com/ffdav/uploads/MacroManager/",
+    "remotesha1": "http://ambiesoft.mooo.com/ffdav/uploads/getSha1.php?file=MacroManager/{}",
+    "ShouldNotBeFiles": [],
+    "ShouldBeOneOfThem": [],
+    "obtainverfrom": "Ambiesoft.MacroManager.history.txt",
+    "obtainverregex": "\\d+\\.\\d+\\.\\d+"
+}

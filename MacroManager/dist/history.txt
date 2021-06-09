@@ -1,3 +1,6 @@
+2021/06/09 v1.0.4
+Fix text cursor position after it is inserted from the list
+
 2021/03/15 v1.0.2
 HighDPI
 

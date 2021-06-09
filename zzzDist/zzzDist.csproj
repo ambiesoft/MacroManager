@@ -4,28 +4,29 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C0DD3EA6-3B3F-42FC-BEA5-B5823389C1E4}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ambiesoft</RootNamespace>
-    <AssemblyName>Ambiesoft.MacroManager</AssemblyName>
+    <ProjectGuid>{6B694624-DDA4-4149-A93A-99217450E789}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>zzzDist</RootNamespace>
+    <AssemblyName>zzzDist</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\MacroManager\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\MacroManager\</OutputPath>
+    <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -33,8 +34,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,24 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MacroManager.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MacroManager.Designer.cs">
-      <DependentUpon>MacroManager.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MacroManager.ja-JP.resx">
-      <DependentUpon>MacroManager.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MacroManager.resx">
-      <DependentUpon>MacroManager.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="dist\history.txt" />
+    <ProjectReference Include="..\MacroManager\MacroManager.csproj">
+      <Project>{c0dd3ea6-3b3f-42fc-bea5-b5823389c1e4}</Project>
+      <Name>MacroManager</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(SolutionDir)README.md" "$(SolutionDir)MacroManager\bin\Release\MacroManager\Ambiesoft.MacroManager.README.md"
+copy "$(SolutionDir)MacroManager\dist\history.txt" "$(SolutionDir)MacroManager\bin\Release\MacroManager\Ambiesoft.MacroManager.history.txt"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
