@@ -24,6 +24,7 @@ The input text would be like **zip create "${directory}/${filenamewithoutext}.zi
 ```
 txtResult.Text = _mm.ResultString;
 ```
+The resulted text would be **zip create "C:/dir/file.zip"**
 
 5. MacroManager can show a dialogbox to easyly edit the input text
 ```
@@ -37,3 +38,8 @@ private void btnDetail_Click(object sender, EventArgs e)
 }
 ```
 
+![MacroManager Dialog](./images/mmdialog.png "MacroManager Dialog")
+
+## Contact
+- Author: Ambiesoft trueff
+- E-mail: <ambiesoft.trueff@gmail.com>
