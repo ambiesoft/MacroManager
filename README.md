@@ -1,5 +1,5 @@
 # MacroManager
-MacroManager transform macros put in the template string into a context value.
+MacroManager transform macros in the template string into a context value.
 
 ## How to use
 1. Create an instance of MacroManager
